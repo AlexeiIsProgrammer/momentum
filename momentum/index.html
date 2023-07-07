@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <link rel="stylesheet" href="css/owfont-regular.min.css">
+    <link rel="stylesheet" href="css/momentum.css">
+
+    <title>Momentum</title>
+</head>
+
+    <body>
+        <header>
+            <div class="audio-player menu-show">
+                <div class="play-buttons">
+                    <div class="prev-track change-opacity">
+                        <img src="assets/svg/play-prev.svg" width="30px">
+                    </div>
+
+                    <div class="start-track pause change-opacity">
+                    </div>
+
+                    <div class="next-track change-opacity">
+                        <img src="assets/svg/play-next.svg" width="30px">
+                    </div>
+                </div>
+                <ul class="track-list">
+                    
+                </ul>
+            </div>
+
+            <div class="weather menu-show">
+                <input type="text" class="city input_custom"/>
+
+                <hr width="150px" color="white" size="1px">
+
+                <div class="weather_info weather-icon owf">
+                    
+                </div>
+
+                <div class="weather_info">
+                    <div class=" temperature">
+                    
+                    </div>
+    
+                    <div class="temperature_in">
+    
+                    </div>
+                </div>
+
+                <div class="weather_info">
+                    <div class="weather_info wind">
+                    
+                    </div>
+                    <div class="wind_in">
+    
+                    </div>
+                    <span class="metresPerSeconds"></span>
+                </div>
+
+                <div class="weather_info">
+                    <div class="weather_info humidity">
+                        
+                    </div>
+                    <div class="humidity_in">
+    
+                    </div>
+                </div>
+        
+            </div>
+
+        </header>
+
+        <main>
+            <div class="left-arrow change-opacity">
+                <img src="assets/svg/slider-prev.svg" width="35px">
+            </div>
+
+            <div class="main-functional">
+                <div class="time menu-show">
+                    
+                </div>
+
+                <div class="day menu-show">
+                    
+                </div>
+
+                <div class="greeting menu-show">
+                    <span class="phrase">
+
+                    </span>
+
+                    <input name="name" type="text" class="name input_custom"  placeholder="[Enter name]">
+                        
+                </input>
+                </div>
+            </div>
+
+            <div class="right-arrow change-opacity">
+                <img src="assets/svg/slider-next.svg" width="35px">
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <div class="settings-menu menu-hide">
+                    <button class="language">en</button>
+                
+                    <label class="custom-radio">
+                        <input type="radio" name="img" value="github" checked="true">
+                        GitHub
+                    </label>
+                        
+                    <label class="custom-radio">
+                        <input type="radio" name="img" value="unsplash">
+                        Unsplash
+                    </label>
+
+                    <label class="custom-radio">
+                        <input type="radio" name="img" value = "flickr">
+                        Flickr
+                    </label>
+
+                    <input type="text" class="tagValue input_custom menu-hide" placeholder="[ nature ]">
+
+                    <label >
+                        <input type="checkbox" name="vision" checked="true" value="time">
+                        <span class="timeSettings">Time</span>
+                    </label>
+
+                    <label >
+                        <input type="checkbox" name="vision" checked="true" value="day">
+                        <span class="dateSettings">Date</span>
+                    </label>
+
+                    <label >
+                      
+                        <input type="checkbox" name="vision" checked="true" value="greeting">
+                        <span class="greetingSettings">Greeting</span>
+                    </label>
+
+                    <label >
+                       
+                        <input type="checkbox" name="vision" checked="true" value="quoteSystem">
+                        <span class="quoteSettings">Quote</span>
+                    </label>
+
+                    <label >
+                        
+                        <input type="checkbox" name="vision" checked="true" value="weather">
+                        <span class="weatherSettings">Weather</span>
+                    </label>
+
+                    <label>
+                        
+                        <input type="checkbox" name="vision" checked="true" value="audio-player">
+                        <span class="playerSettings">Audio Player</span>
+                    </label>
+
+                    <label >
+                        
+                        <input type="checkbox" name="vision" checked="true" value="toDoList">
+                        <span class="toDoSettings">toDo</span>
+                    </label>
+                    
+                    <label class="nameSettings">
+                        Settings
+                    </label>
+
+                </div>
+
+                <div class="settings change-opacity">
+                    
+                </div>
+            </div>
+            
+                
+            </div>
+
+            <div style="width: 40px; height: 40px;" title="Это 2022 год!">
+                <img src="assets/svg/rs_school_js.svg">
+            </div>
+
+            <div class="quoteSystem menu-show">
+
+                <div class="refresh change-opacity" >
+                    <img src="assets/svg/reload.svg" width="40px">
+                </div>
+    
+                <div class="quote">
+                    
+                </div>
+    
+                <div class="author">
+                        
+                </div>
+
+            </div>
+            <div>
+                <a href="https://github.com/AlexeiIsProgrammer?tab=repositories" style="font-family: 'Rubik';">Author's GitHub</a>
+            </div>
+            
+            <div class="toDoList menu-show">
+                <div class="toDoTaskDiv">
+                    <ul class="toDoTasks">
+
+                    </ul>
+                </div>
+                
+                <hr width="150px" size="1px" color="black">
+                <input type="text" class="inputTask input_custom" placeholder="[ Write Task ]">
+            </div>
+            
+        </footer>
+        
+        <script type="module" src="javascript/time.js"></script>
+        <script type="module" src="javascript/saveName.js"></script>
+        <script type="module" src="javascript/weather.js"></script>
+        <script type="module" src="javascript/audioplayer.js"></script>
+        
+    </body>
+</html>
