@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: wrap column;
+
+    justify-content: space-between;
+    padding: 0px 5px 0px 5px;
+
+}
+
+/**/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.audio-player {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.weather {
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: flex-start;
+
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*music*/
+
+.pause {
+    background-image: url("https://rolling-scopes-school.github.io/alexeiisprogrammer-JSFEPRESCHOOL2022Q2/momentum/assets/svg/play.svg");
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.play {
+    background-image: url("https://rolling-scopes-school.github.io/alexeiisprogrammer-JSFEPRESCHOOL2022Q2/momentum/assets/svg/pause.svg");
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.play-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 115px;
+    margin-bottom: 25px;
+}
+
+.track-list{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+
+    text-align: left; 
+    list-style: none;
+    padding: 0;
+}
+
+main {
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    flex-flow: nowrap row;
+    align-items: flex-end;
+    bottom: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.change-opacity{
+    opacity: .8;
+    transition: all .3s;
+}
+
+.change-opacity:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.time {
+    color: white;
+    font-size: 100px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.day{
+    color: white;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main-functional{
+    height: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greeting {
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: stretch;
+    align-items: center;
+
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.quoteSystem {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+    white-space: normal;
+
+    width: 300px;
+
+    color: white;
+    font-size: 20px;
+    
+}
+.quote {
+    margin: 5px 0px 5px 0px;
+    font-style: italic;
+}
+.author{
+    font-family: 'Rubik', sans-serif;
+}
+
+.settings {
+    background-image: url("https://rolling-scopes-school.github.io/alexeiisprogrammer-JSFEPRESCHOOL2022Q2/momentum/assets/svg/Settings.svg");
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease;
+}
+
+.settings:hover {
+    transform: rotate(45deg);
+}
+
+.settings-menu {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: left;
+
+    width: 200px;
+    height: 250px;
+
+    background-color: rgba(243, 252, 255, 0.2);
+    border: 1px solid rgb(227, 227, 227, 0.3);
+    border-radius: 10px;
+
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 15px;
+
+}
+
+.language {
+    height: 20px;
+    width: 40px;
+    align-self: center;
+    transition: all, .2s;
+
+    border-radius: 10px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    background-color: white;
+}
+
+.language:hover{
+    transform: scaleX(1.2);
+}
+
+.menu-hide{
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.menu-show{
+    opacity: 1;
+    transition: all 0.4s ease-in;
+}
+
+.refresh {
+    transition: all 0.3s ease;
+}
+
+.refresh:hover {
+    transform: rotate(45deg);
+}
+
+.toDoList{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+    width: 200px;
+    height: 250px;
+
+    background-color: rgba(188, 172, 172, 0.456);
+    border: 1px solid rgb(227, 227, 227, 0.3);
+    border-radius: 10px;
+
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.toDoTasks{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding: 0;
+}
+
+.toDoTaskDiv{
+    overflow-y: auto;
+    width: 200px;
+}
+
+.completeTask{
+    text-decoration: line-through;
+
+    color: rgb(147, 199, 161);
+    font-size: 13px;
+}
+
+.unCompleteTask{
+    text-decoration: none;
+    color: rgb(255, 100, 100);
+    
+    font-size: 13px;
+}
+
+.selected-track{
+    color: rgb(176, 176, 176);
+}
+
+.input_custom {
+    border: none;
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    
+}
+
+.input_custom::placeholder {
+    color: aliceblue;
+    opacity: 50%;
+}
+
+.tagValue.input_custom::placeholder {
+    color: aliceblue;
+    opacity: 90%;
+}
+
+.inputTask.input_custom::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 90%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.inputTask.input_custom{
+    border: none;
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    
+}
+
+.input_custom:focus {
+    outline: none;
+    border: none;
+}
+
+.name{
+    height: 4rem;
+    font-size: 40px;
+    padding: 10px;
+    min-width: 50%;
+    text-align: left;
+    width: 675px;
+}
+
+.phrase{
+    min-width: 50%;
+    text-align: right;
+    padding: 10px;
+}
+
+.weather_info {
+    display: flex;
+    flex-flow: nowrap row;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 3px 3px 3px 3px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+
+.city{
+    font-size: 20px;
+}
+
+.tagValue{
+    
+}
+
+.nameSettings{
+    align-self: center;
+    font-size: 20px;
+}
